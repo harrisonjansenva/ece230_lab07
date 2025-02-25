@@ -20,7 +20,5 @@ begin
         led[i] = led[i - 1] ^ sw[i];
     end
 end
-
-    
     
 endmodule
