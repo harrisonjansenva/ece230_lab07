@@ -13,10 +13,10 @@ module test();
     initial begin
         $dumpvars(0,test);
         sw = 16'h0000;
-        #3;
+        #15;
         if (led != 16'hffff) $display("Test failed!");
         sw = 16'hFFFF;
-        #3;
+        #15;
         if (led != 16'haaaa) $display("Test failed!");
         $finish;
     end
